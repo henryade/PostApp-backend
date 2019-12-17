@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node build/index.js",
+    "clean": "rm -rf build && mkdir build",
     "start:dev": "nodemon --exec babel-node index",
     "serve": "babel-node index",
-    "build": "babel . --ignore node_modules --ignore build --out-dir build"
+    "build-server": "babel --ignore node_modules -d ./build ./ -s",
+    "build": "npm run clean && npm run build-server"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,7 @@
     "@babel/core": "^7.7.5",
     "@babel/node": "^7.7.4",
     "@babel/preset-env": "^7.7.6",
+    "@babel/register": "^7.7.4",
     "nodemon": "^2.0.1"
   }
 }

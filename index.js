@@ -1,3 +1,4 @@
+import '@babel/register';
 import { ApolloServer, PubSub } from 'apollo-server';
 import mongoose from 'mongoose';
 import { config } from 'dotenv';
