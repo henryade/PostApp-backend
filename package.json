@@ -1,0 +1,33 @@
+{
+  "name": "postapp",
+  "version": "1.0.0",
+  "description": "MERNG stack app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "start:dev": "nodemon --exec babel-node index",
+    "serve": "babel-node index",
+    "build": "babel . --ignore node_modules --ignore build --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "henryade"
+  },
+  "author": "Adeola Adeyemo",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.9.13",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.5.8",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.14"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "nodemon": "^2.0.1"
+  }
+}
