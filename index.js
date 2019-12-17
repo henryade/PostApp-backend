@@ -1,4 +1,5 @@
-import '@babel/register';
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 import { ApolloServer, PubSub } from 'apollo-server';
 import mongoose from 'mongoose';
 import { config } from 'dotenv';

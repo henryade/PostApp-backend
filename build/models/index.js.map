@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../models/index.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;AAAA;;AACA","sourcesContent":["import Post from './Post';\nimport User from './User';\n\nexport {\n  Post,\n  User\n}"],"file":"index.js"}
